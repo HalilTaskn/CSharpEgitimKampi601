@@ -45,6 +45,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnIDAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -166,6 +167,7 @@
             this.btnList.TabIndex = 12;
             this.btnList.Text = "Listele";
             this.btnList.UseVisualStyleBackColor = false;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // btnAdd
             // 
@@ -183,23 +185,25 @@
             // 
             this.btnDelete.BackColor = System.Drawing.Color.IndianRed;
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDelete.Location = new System.Drawing.Point(222, 376);
+            this.btnDelete.Location = new System.Drawing.Point(30, 324);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(180, 46);
             this.btnDelete.TabIndex = 14;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.IndianRed;
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnUpdate.Location = new System.Drawing.Point(222, 428);
+            this.btnUpdate.Location = new System.Drawing.Point(30, 376);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(180, 46);
             this.btnUpdate.TabIndex = 15;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // dataGridView1
             // 
@@ -210,11 +214,24 @@
             this.dataGridView1.Size = new System.Drawing.Size(996, 440);
             this.dataGridView1.TabIndex = 16;
             // 
+            // btnIDAdd
+            // 
+            this.btnIDAdd.BackColor = System.Drawing.Color.IndianRed;
+            this.btnIDAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnIDAdd.Location = new System.Drawing.Point(30, 272);
+            this.btnIDAdd.Name = "btnIDAdd";
+            this.btnIDAdd.Size = new System.Drawing.Size(180, 46);
+            this.btnIDAdd.TabIndex = 18;
+            this.btnIDAdd.Text = "ID Göre Getir";
+            this.btnIDAdd.UseVisualStyleBackColor = false;
+            this.btnIDAdd.Click += new System.EventHandler(this.btnIDAdd_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1473, 502);
+            this.ClientSize = new System.Drawing.Size(1473, 564);
+            this.Controls.Add(this.btnIDAdd);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
@@ -261,6 +278,7 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnIDAdd;
     }
 }
 
